@@ -1,0 +1,70 @@
+
+
+
+-jouer les effets de qql carte  :
+
+
+
+
+
+
+                            case 29:
+                                System.out.println("Gain 1d or 1r");
+                                break;
+                            case 30:
+                                joueurQuiJoueLaCarte.gagnerPointsHonneur(2);
+                                System.out.println("Gain 2r You pay 1R less the next time you acquire a Construc this turn");
+                                break;
+                            case 31:
+                                joueurQuiJoueLaCarte.gagnerPointsHonneur(2);
+                                System.out.println("Once per turn, when you put a Mechana Construc into play (including this one) , draw a card");
+                                break;
+                            case 32:
+                                joueurQuiJoueLaCarte.gagnerPointsHonneur(2);
+                                System.out.println("Once per turn, gain 2d.You may spend it only to acquire Mechana Construct");
+                                break;
+                            case 33:
+                                joueurQuiJoueLaCarte.gagnerPointsHonneur(2);
+                                System.out.println(" Once per turn");
+                                gagner1DParTourPourChaqueMechaConstruct(joueurQuiJoueLaCarte);
+
+                                break;
+                            case 34:
+                                System.out.println("You may treat all Construcs as Mechana Construcs");
+                                break;
+                            case 35:
+                                System.out.println("Once per turn, when you acquire another Mechana Construc, you may put it directly into play");
+                                break;
+                            case 36:
+                                System.out.println("Once per turn ,gain 1 r . you may spend it only to acquire Mechana Construc");
+                                break;
+
+                            case 38:
+                                gagnerDesDegats(joueurQuiJoueLaCarte,2);
+                                System.out.println("Banish a card in you hand or discard pile");
+                                break;
+                            case 39:
+                                gagnerDesRunes(joueurQuiJoueLaCarte,1);
+                                System.out.println("Banish a card in you hand or discard pile");
+                                break;
+
+                            case 42:
+                                System.out.println("Once per turn gain 1 The first time you deafeat a monster in the center row each turn, gain 1 R");
+                                break;
+
+                            case 44:
+                                System.out.println("Each opponent must destryo a Construc he controls");
+                                break;
+                            case 45:
+                                System.out.println("Banish a card un the center row and/or in you discard pile");
+                                break;
+                            case 46:
+                                System.out.println("Banish a card un the center row");
+                                break;
+                            case 47:
+                                System.out.println("If an opponent has more than one construct, that player must destroy all but one Construct he controls");
+                                break;
+
+                        }
+
+                    }
